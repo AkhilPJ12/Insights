@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Oceanographic | An Data Platform</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="oceanographic">
+  
+
+  <header>
+    <img src="assets/newlogo.png" alt="CMLRE Logo" class="logo">
+    <h1>Oceanographic</h1>
+  </header>
+
+  <nav>
+    <a href="main.html">Home</a> |
+    <a href="oceanographic.html">Oceanographic</a> |
+    <a href="fisheries.html">Fisheries</a> |
+    <a href="molecular-biodiversity.html">Molecular Biodiversity</a>
+  </nav>
+
+  <main>
+    <h2>Details</h2>
+    <div id="detail-content"></div>
+    <div id="viz-container" class="viz-container" aria-label="Charts Area">
+      <canvas id="chart-sst"></canvas>
+      <canvas id="chart-wave"></canvas>
+      <canvas id="chart-swell"></canvas>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 CMLRE, Kochi</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
+

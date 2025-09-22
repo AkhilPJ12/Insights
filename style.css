@@ -1,0 +1,176 @@
+/* Background video setup */
+#bg-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+/* General text styling */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  color: white;
+  text-align: center;
+  background: #000;
+}
+
+/* Header with logo + title */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+/* Logo styling */
+header .logo {
+  height: 80px;   /* make it larger */
+  width: auto;
+  background: rgba(255, 255, 255, 0.2); /* faint background so it’s always visible */
+  padding: 5px;
+  border-radius: 10px;
+  object-fit: contain;
+}
+
+/* Title with Georgia font */
+header h1 {
+  font-family: Georgia, serif;
+  font-size: 2.5rem;
+  color: #f1f1f1;
+}
+
+/* Navigation menu */
+nav {
+  margin: 20px 0;
+  background: rgba(0, 0, 0, 0.3);
+  padding: 10px;
+}
+
+nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #ffd700; /* gold */
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #00ffff; /* cyan on hover */
+}
+
+/* Main content */
+main {
+  padding: 20px;
+}
+
+main h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+/* Explore button */
+#exploreBtn {
+  padding: 12px 25px;
+  font-size: 18px;
+  background-color: #00bfff;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+  transition: transform 0.2s, background-color 0.3s;
+}
+
+#exploreBtn:hover {
+  background-color: #1e90ff;
+  transform: scale(1.1);
+}
+
+/* Visualization area */
+#visualizationArea {
+  margin-top: 20px;
+}
+
+/* Result Sections */
+/* removed home results section */
+
+/* Data table styling */
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 8px;
+}
+
+.data-table th, .data-table td {
+  padding: 10px 12px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.data-table th {
+  text-align: left;
+  color: #ffd700;
+  width: 340px;
+}
+
+.data-table tr:hover {
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.table-scroll {
+  max-height: 60vh;
+  overflow: auto;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 8px;
+}
+
+/* Charts layout */
+.viz-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 16px;
+  width: 92%;
+  margin: 16px auto 0;
+}
+
+.viz-container canvas {
+  max-width: 100%;
+  height: 220px !important; /* force smaller height */
+  background: rgba(0, 0, 0, 0.35);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 8px;
+  padding: 8px;
+}
+
+/* Coordinate inputs */
+.coords-form {
+  display: grid;
+  grid-template-columns: max-content 200px;
+  gap: 10px 12px;
+  align-items: center;
+  justify-content: center;
+  margin: 10px auto 20px;
+}
+
+.coords-form label {
+  color: #f1f1f1;
+}
+
+.coords-form input[type="number"] {
+  padding: 8px 10px;
+  border-radius: 6px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(0, 0, 0, 0.4);
+  color: #fff;
+}
+
+/* Footer */
+footer {
+  margin-top: 40px;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.5);
+}

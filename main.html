@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>An Data Platform for Oceanographic, Fisheries, and Molecular Biodiversity Insights</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Background video -->
+  <video autoplay muted loop id="bg-video">
+    <source src="assets/ocean.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <!-- Header -->
+  <header>
+    <img src="assets/newlogo.png" alt="CMLRE Logo" class="logo">
+    <h1>An Data Platform for Oceanographic, Fisheries, and Molecular Biodiversity Insights</h1>
+  </header>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="oceanographic.html">Oceanographic</a> |
+    <a href="fisheries.html">Fisheries</a> |
+    <a href="molecular-biodiversity.html">Molecular Biodiversity</a>
+  </nav>
+
+  <!-- Main content -->
+  <main>
+    <h2>Dashboard</h2>
+    <div class="coords-form" aria-label="Coordinate Inputs">
+      <label for="latitude">Latitude</label>
+      <input type="number" id="latitude" name="latitude" step="0.000001" placeholder="e.g., 9.9312">
+
+      <label for="longitude">Longitude</label>
+      <input type="number" id="longitude" name="longitude" step="0.000001" placeholder="e.g., 76.2711">
+    </div>
+    <button id="exploreBtn">🌐 Explore Data</button>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 CMLRE, Kochi</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

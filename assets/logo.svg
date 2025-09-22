@@ -1,0 +1,15 @@
+<svg width="160" height="160" viewBox="0 0 160 160" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="CMLRE Logo">
+  <defs>
+    <linearGradient id="ocean" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#00bfff"/>
+      <stop offset="100%" stop-color="#1e90ff"/>
+    </linearGradient>
+  </defs>
+  <rect x="0" y="0" width="160" height="160" rx="20" fill="url(#ocean)"/>
+  <g fill="#ffffff">
+    <circle cx="80" cy="60" r="22" fill="#ffffff" fill-opacity="0.9"/>
+    <path d="M20 110c20-18 40-18 60 0s40 18 60 0v18H20z" fill="#ffffff" fill-opacity="0.9"/>
+  </g>
+  <text x="80" y="148" text-anchor="middle" font-family="Georgia, serif" font-size="18" fill="#ffffff">CMLRE</text>
+</svg>
+
